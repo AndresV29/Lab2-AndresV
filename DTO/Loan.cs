@@ -1,10 +1,12 @@
 ﻿namespace DTO
 {
-    public class Loan
+    public class Loan : BaseClass
     {
         // 0 - 2 hipoteca, personal,vehicular
-        public int valor { get; set; }
-        public string tipo { get; set; }
-        public int moneda { get; set; } 
+        public int[] type { get; set; }
+        public string name { get; set; }
+        public int[] currency { get; set; } 
+
+        public Conditions loanConditions { get; set; }
     }
 }
