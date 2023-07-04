@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AppLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AppLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppLogic.dll": {}
+        }
+      },
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "AppLogic/1.0.0": {
+      "type": "project",
+      "path": "../AppLogic/AppLogic.csproj",
+      "msbuildProject": "../AppLogic/AppLogic.csproj"
+    },
     "DTO/1.0.0": {
       "type": "project",
       "path": "../DTO/DTO.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AppLogic >= 1.0.0",
       "DTO >= 1.0.0"
     ]
   },
@@ -53,6 +69,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\AppLogic\\AppLogic.csproj": {
+              "projectPath": "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\AppLogic\\AppLogic.csproj"
+            },
             "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\DTO\\DTO.csproj": {
               "projectPath": "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\DTO\\DTO.csproj"
             }

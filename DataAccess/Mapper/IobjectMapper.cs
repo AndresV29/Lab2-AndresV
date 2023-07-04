@@ -9,7 +9,6 @@ namespace DataAccess.Mapper
 {
     public interface IobjectMapper
     {
-        BaseClass
         BaseClass BuildObject(Dictionary<string, object> objectRow);
         
         List<BaseClass> BuildObjects(List<Dictionary<string, object>> objectRows);

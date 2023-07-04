@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "AppLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppLogic.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -216,10 +239,22 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "AppLogic/1.0.0": {
+      "type": "project",
+      "path": "../AppLogic/AppLogic.csproj",
+      "msbuildProject": "../AppLogic/AppLogic.csproj"
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AppLogic >= 1.0.0",
+      "DTO >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -250,7 +285,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\AppLogic\\AppLogic.csproj": {
+              "projectPath": "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\AppLogic\\AppLogic.csproj"
+            },
+            "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\andre\\Proyecto2\\Lab2\\Lab2-AndresV\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
